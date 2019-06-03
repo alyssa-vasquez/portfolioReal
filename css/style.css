@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+/* fonts */
+
+h1 {
+  font-family: "";
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "Bodoni MT";
+  font-size: 50px;
+}
+
+h3 {
+  font-family: "Bodoni MT";
+  font-size: 50px;
+  padding: 3%;
+  line-height: 55px;
+}
+
+p {
+  font-family: "Bodoni MT";
+  font-size: 25px;
+  line-height: 27px;
+}
+
+h6 {
+  font-family: "Bodoni MT";
+  font-size: 16px;
+}
+
+header {
+  background-color: #A194C0;
+  width: 100%;
+}
+
+.logo {
+  /* justify-content: flex-start; */
+  padding-top: 1%;
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul {
+  display: flex;
+  font-family: "Source Sans Pro";
+  font-size: 30px;
+  justify-content: flex-end;
+}
+
+nav li {
+  align-items: center;
+  /* flex-basis: 15%; */
+  padding: 2%;
+}
+
+.BPMLogo {
+  
+}
