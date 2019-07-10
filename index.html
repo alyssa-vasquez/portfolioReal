@@ -6,35 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="logo"><img src="/assets/PersonalLogoDesktop.png" alt="logo"></div>
-      <nav>
+    <div class="container">
+      <header>
+        <div class="logo"><img src="/assets/PersonalLogoDesktop.png" alt="logo"></div>
+          <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="about.html"><li>About</li></a>
+                <a href="resume.html"><li>Resume</li></a>
+              </ul>
+            </div>
+          </nav>
+      </header>
+
+        <div class="intro">
+          <div class="textBox"><h3>Hello, everyone!<br />My name is Alyssa Vasquez.<br />I am a UX Designer based in San Diego.<br />I create clear solutions through thoughtful design.</h3></div>
+          <div class="BPMLogo"><img class="projectLogo"src="assets/BPMLogo.png" alt="project logo"></div>
+          <div class="BPMintro"><p>BPM Fitness makes is easy for personal trainers and their clients to connect and share content.</p></div>
+          <div class="BPMHomepageimg"><img class="BPMHomepage" src="assets/BPMHomepage.png" alt="project homepage"></div>
+          <div class="purpleButton"><button class="btn" type="button"><a class="link" href="project.html">View Case Study</a></button></div>
+          <div class="newButton">
+  <!-- <a class="btn">
+  <svg width="277" height="62">
+    <defs>
+        <linearGradient id="grad1">
+            <stop offset="0%" stop-color="#FF8282"/>
+            <stop offset="100%" stop-color="#E178ED" />
+        </linearGradient>
+    </defs>
+     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="266" height="50"></rect>
+  </svg>
+    <span>View Case Study</span>
+</a>
+</div> -->
+        </div>
+
+      <footer>
+        <div class="getInTouch"><h6>Get in Touch</h6></div>
+        <div class="footSentence"><h6>Thanks for stopping by and checking out my work. Feel free to reach out anytime to talk about UX.</h6></div>
         <ul>
-          <li><a href="about.hmtl">About</a></li>
-          <li><a href="resume.hmtl">Resume</a></li>
+          <li><a href="mailto:alyssa.n.vasquez@outlook.com"><img class="contact" src="assets/email.png" alt="email"></a></li>
+          <li><a href="https://docs.google.com/document/d/1942RVJ6q-0-kyYQwr1xV4AfV1MTC5_EaD55E7C-2bvs/edit?usp=sharing"><img class="contact" src="assets/linkedin.png" alt="linkedin"></a></li>
+          <li><a href="https://github.com/alyssa-vasquez"><img class="contact" src="assets/github-filled.png" alt="github"></a></li>
         </ul>
-      </nav>
-    </header>
-
-      <div class="intro">
-        <h3>Hello, everyone!<br />My name is Alyssa Vasquez.<br />I am a UX Designer based in San Diego.<br />I create clear solutions through thoughtful design.</h3>
-        <div class="BPMLogo"><img src="assets/BPMLogo.png" alt="project logo"></div>
-        <div class="BPMintro"><p>BPM Fitness makes is easy for personal trainers and their clients to connect and share content.</p></div>
-        <div class="BPMHomepage"><img src="assets/BPMHomepage.png" alt="project homepage"></div>
-        <button type="button"><a href="https://invis.io/V2QDPSUM9UH">Your Custom Text</a></button>
-      </div>
-
-    <footer>
-      <h6>Thanks for stopping by and checking out my work. Feel free to reach out anytime to talk about UX.</h6>
-      <ul>
-        <li><a href="mailto:alyssa.n.vasquez@outlook.com"><img src="assets/email.png" alt="email"></a></li>
-        <li><a href="https://docs.google.com/document/d/1942RVJ6q-0-kyYQwr1xV4AfV1MTC5_EaD55E7C-2bvs/edit?usp=sharing"><img src="assets/linkedin.png" alt="linkedin"></a></li>
-        <li><a href="https://github.com/alyssa-vasquez"><img src="assets/github-filled.png" alt="github"></a></li>
-      </ul>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
