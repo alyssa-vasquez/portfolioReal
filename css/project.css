@@ -26,14 +26,14 @@
   }
 
   h3 {
-    font-family: "Bodoni MT";
+    font-family: 'Bodoni MT', 'Didot';
     font-size: 2.3rem;
     padding: 3%;
     line-height: 2.5rem;
   }
 
   p {
-    font-family: "Bodoni MT";
+    font-family: 'Bodoni MT', 'Didot';
     font-size: 1.8rem;
     line-height: 2.5rem;
     padding-top: 2.5%;
@@ -43,7 +43,7 @@
   }
 
   h6 {
-    font-family: "Bodoni MT";
+    font-family: 'Bodoni MT', 'Didot';
     font-size: 1.6rem;
   }
 
@@ -215,119 +215,113 @@ footer li {
 
 
 
-
-
-
-
 /* navbar starts here */
 
-.logo img{
-  height: 3.6rem;
-  width: 5rem;
-}
+  .logo img{
+    height: 36px;
+    width: 5rem;
+  }
 
-.logo {
-  padding: 2%;
-}
+  .logo {
+    padding: 2%;
+  }
 
-a {
-  text-decoration: none;
-  color: #232323;
-  transition: color 0.3s ease;
-}
+  a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+  }
 
-#menuToggle {
-  position: relative;
-  top: -45px;
-  left: 90%;
-  z-index: 1;
-}
+  #menuToggle {
+    position: relative;
+    top: -45px;
+    left: 90%;
+    z-index: 1;
+  }
 
-#menuToggle input {
-  width: 4rem;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
+  #menuToggle input {
+    width: 4rem;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
 
-  opacity: 0;
-  z-index: 2;
-}
+    opacity: 0;
+    z-index: 2;
+  }
 
-#menuToggle span {
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
+  #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
 
-  background: black;
-  border-radius: 3px;
+    background: black;
+    border-radius: 3px;
 
-  z-index: 1;
+    z-index: 1;
 
-  transform-origin: 4px 0px;
+    transform-origin: 4px 0px;
 
-/* begining of the animation code  */
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-
-/* from here until single menu is only for the animation  */
-#menuToggle span:first-child {
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2) {
-  transform-origin: 0% 100%;
-}
-
-#menuToggle input:checked ~ span {
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-#menuToggle input:checked ~ span:nth-last-child(3){
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-#menuToggle input:checked ~ span:nth-last-child(2) {
-  transform: rotate(315deg) translate(0, -1px);
-}
-
-/* this is the actual bar moving over */
-#menu {
-  position: relative;
-  width: 25%;
-  margin: -17% -15%;
-  padding-top: 18%;
-  display: flex;
-  flex-direction: column;
-
-  background: #ededed;
-  list-style-type: none;
-  transform-origin: 50%;
-  transform: translate(0, -100%);
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-/* this is editing the font of the inside stuff */
-#menu li {
-    font-family: "Source Sans Pro";
-    font-size: 1.8rem;
-    padding: 8%;
-}
-
-#menuToggle input:checked ~ ul {
-  transform: none;
-}
+  /* begining of the animation code  */
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
 
 
+  /* from here until single menu is only for the animation  */
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
 
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
 
+  #menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(315deg) translate(0, -1px);
+  }
+
+  /* this is the actual bar moving over */
+  #menu {
+    position: relative;
+    width: 25%;
+    margin: -17% -15%;
+    padding-top: 18%;
+    display: flex;
+    flex-direction: column;
+
+    background: #ededed;
+    list-style-type: none;
+    transform-origin: 50%;
+    transform: translate(0, -100%);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  /* this is editing the font of the inside stuff */
+  #menu li {
+      font-family: "Source Sans Pro";
+      font-size: 1.8rem;
+      padding: 8%;
+  }
+
+  #menuToggle input:checked ~ ul {
+    transform: none;
+  }
+
+/* end of mobile */
 
 }

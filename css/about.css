@@ -27,21 +27,21 @@
   }
 
   h3 {
-    font-family: "Bodoni MT";
+    font-family: 'Bodoni MT', 'Didot';
     font-size: 2.3rem;
     padding: 3%;
     line-height: 2.5rem;
   }
 
   p {
-    font-family: "Bodoni MT";
+    font-family: 'Bodoni MT', 'Didot';
     font-size: 1.8rem;
     line-height: 2.5rem;
     padding: 5%;
   }
 
   h6 {
-    font-family: "Bodoni MT";
+    font-family: 'Bodoni MT', 'Didot';
     font-size: 1.6rem;
   }
 
@@ -216,8 +216,6 @@ a {
   transform: none;
 }
 
-
-
-
+/* end of mobile */
 
 }
