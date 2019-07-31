@@ -1,4 +1,3 @@
-@media screen and (max-width: 42em) {
   * {
     box-sizing: border-box;
   }
@@ -47,14 +46,12 @@
     font-size: 1.6rem;
   }
 
+
   header {
     height: 5.5em;
     background-color: #A194C0;
     width: 100%;
   }
-
-
-
 
 
   .CaseStudy {
@@ -100,13 +97,6 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
-  .inVisionButton {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
-  }
-
   .TwoColumn {
     display: flex;
   }
@@ -133,7 +123,7 @@
 
   .greenbackground {
     background-color: #9BBCB1;
-    font-family: "Bodoni MT";
+    font-family: 'Bodoni MT', 'Didot';
     font-size: 1.8rem;
     line-height: 2.5rem;
     padding-top: 2.5%;
@@ -151,35 +141,35 @@
 
   .personaInfo {
     text-align: center;
-    font-family: "Bodoni MT";
+    font-family: 'Bodoni MT', 'Didot';
     font-size: 1.8rem;
     line-height: 2.5rem;
     padding-top: 2.5%;
   }
 
-/* button */
+  /* button */
 
-.purpleButton {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
+  .purpleButton {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
 
-.btn {
-background-color: #A194C0;
-border-radius: .5rem;
-grid-column: 3;
-height: 3.5rem;
-width: 18.5rem;
-}
+  .btn {
+  background-color: #A194C0;
+  border-radius: .5rem;
+  grid-column: 3;
+  height: 3.5rem;
+  width: 18.5rem;
+  }
 
-.link {
-color: white;
-font-size: 1.6rem;
-font-family: "Source Sans Pro";
-text-decoration: none;
-}
+  .link {
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Source Sans Pro";
+  text-decoration: none;
+  }
 
 footer {
   background-color: #A194C0;
@@ -214,11 +204,10 @@ footer li {
 }
 
 
-
 /* navbar starts here */
 
   .logo img{
-    height: 36px;
+    height: 3.6rem;
     width: 5rem;
   }
 
@@ -323,5 +312,135 @@ footer li {
   }
 
 /* end of mobile */
+
+
+
+
+
+
+
+/* Desktop starts here */
+
+@media screen and (min-width: 800px) {
+  * {
+    box-sizing: border-box;
+  }
+  /* purple font */
+    h1 {
+      font-size: 4rem;
+      padding-top: 2rem;
+    }
+
+  /* green font */
+    h2 {
+      font-size: 3.4rem;
+    }
+
+    p {
+      font-size: 2.7rem;
+      line-height: 4rem;
+      padding: 3rem 8% 3rem 8%;
+    }
+
+  /* footer */
+    h6 {
+      font-size: 2.4rem;
+      line-height: 3rem;
+    }
+
+    header {
+      height: 7rem;
+    }
+
+  .projectLogo {
+    height: 24rem;
+    width: 40rem;
+  }
+
+  .BPMintro {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+
+/* button */
+
+  .purpleButton {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
+
+  .btn {
+    border-radius: .5rem;
+    height: 4.8rem;
+    width: 24rem;
+  }
+
+  .link {
+    font-size: 2rem;
+  }
+
+
+  .ThreeColumn {
+    display: flex;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .three-col {
+    flex: 33.333%;
+  }
+
+  .paragraphThree{
+    padding-top: 3rem;
+    padding-left: 7%;
+  }
+
+  .greenbackground {
+    font-size: 2.7rem;
+    line-height: 3.5rem;
+    padding: 3rem 8% 3rem 8%;
+  }
+
+  .Personas {
+    display: flex;
+  }
+
+  .person {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .personaInfo {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  footer {
+    height: 10%;
+  }
+
+  .contact {
+    height: 4rem;
+    width: 4rem;
+  }
+
+
+/* navbar starts here */
+
+  .logo img{
+    height: 5.5rem;
+    width: 7rem;
+  }
+
+  #menuToggle span {
+  display: block;
+  width: 40px;
+  height: 6px;
+  margin-bottom: 5px;
+  position: relative;
+
+/* desktop ends here  */
 
 }
