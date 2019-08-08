@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/project.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
@@ -12,28 +13,34 @@
   <body>
     <div class="container">
       <header>
-        <div class="logo">
-          <a href="index.html"><img src="assets/PersonalLogoDesktop.png" alt="logo"></a>
+      <!--    Made by Erik Terwan    -->
+      <!--   24th of November 2015   -->
+      <!--        MIT License        -->
+      <nav role='navigation'>
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="assets/PersonalLogoDesktop.png" alt="logo"></a>
+          </div>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="https://docs.google.com/document/d/1942RVJ6q-0-kyYQwr1xV4AfV1MTC5_EaD55E7C-2bvs/edit?usp=sharing"><li>Resume</li></a>
+          </ul>
         </div>
-          <nav role="navigation">
-            <div id="menuToggle">
-              <input type="checkbox"/>
-              <span></span>
-              <span></span>
-              <span></span>
-              <ul id="menu">
-                <a href="about.html"><li>About</li></a>
-                <a href="resume.html"><li>Resume</li></a>
-              </ul>
-            </div>
-          </nav>
+      </div>
+      </nav>
       </header>
 
       <section class="CaseStudy">
-          <h1>Case Study</h1>
-          <div class="BPMLogo"><img class="projectLogo"src="assets/BPMLogo.png" alt="project logo"></div>
-          <div class="shortParagraph"><p>BPM Fitness makes is easy for personal trainers and their clients to connect and share content.</p></div>
+          <div class="pageTitle"><h1>Case Study</h1></div>
           <div class="BPMHomepageimg"><img class="BPMHomepage" src="assets/BPMHomepage.png" alt="project homepage"></div>
+          <div class="shortParagraph"><p>BPM Fitness makes is easy for personal trainers and their clients to connect and share content.</p></div>
           <div class="purpleButton"><button class="btn" type="button"><a class="link" href="https://invis.io/V2QDPSUM9UH">View InVision Prototype</a></button></div>
       </section>
 
@@ -62,7 +69,7 @@
 
         <div class="three-col">
           <h1>Solution</h1>
-          <div class="paragraph"><p>Create BPM Fitness to ensure that connecting and sharing information between personal trainers and their clients is easy and efficient.</p></div>
+          <div class="paragraphThree"><p>Create BPM Fitness to ensure that connecting and sharing information between personal trainers and their clients is easy and efficient.</p></div>
         </div>
       </section>
 
@@ -100,7 +107,7 @@
 
       <section class="Personas">
         <div class="three-col">
-          <img class="person" src="assets/Trainer.png" alt="Mark">
+          <img src="assets/Trainer.png" alt="Mark">
           <div class="personaInfo">Mark<br />35, Male<br />Fitness Trainer<br />Los Angeles, CA</div>
           <div class="paragraph"><p>Mark is interesed in the idea of a cloud based sharing application designed to connect personal trainers and their clients especially, for his clients that live in other cities.<br /><br />This app would also help him keep track of his LA clients’ various routines, goals, progress and diets, something he admits he could use help with.</p></div>
         </div>
@@ -130,7 +137,7 @@
         <h2>Wireframes</h2>
         <div class="paragraph"><p>Then came wireframes and sketches of what each page would look like and an idea of navigating from one page to the next. The wireframes were tested by three users and received positive feedback as far as functionality goes. Users were asked to sign up for an account, add a new progress picture, add a new check in, and find the workout for day one and add a new meal plan.<br /><br />The feedback from the users testing was essential in determining if the app was  intuitive. The feedback indicated that the both versions of the app were easy to use and straight forward.</p></div>
         <div class="mobileImage"><img src="assets/wireframesMobile.png" alt="wireframes"></div>
-        <div class="desktopImage"><img src="assets/wireframesADesktop.png" alt="wireframes"></div>
+        <div class="desktopImage"><img src="assets/wireframesDesktop.png" alt="wireframes"></div>
 
           <!-- VisualDesign Section -->
         <h1>Visual Design </h1>

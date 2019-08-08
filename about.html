@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/about.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
@@ -12,28 +13,34 @@
   <body>
     <div class="container">
       <header>
-        <div class="logo">
-          <a href="index.html"><img src="assets/PersonalLogoDesktop.png" alt="logo"></a>
+      <!--    Made by Erik Terwan    -->
+      <!--   24th of November 2015   -->
+      <!--        MIT License        -->
+      <nav role='navigation'>
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="assets/PersonalLogoDesktop.png" alt="logo"></a>
+          </div>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id="menu">
+            <a href="index.html"><li>Home</li></a>
+            <a href="about.html"><li>About</li></a>
+            <a href="https://docs.google.com/document/d/1942RVJ6q-0-kyYQwr1xV4AfV1MTC5_EaD55E7C-2bvs/edit?usp=sharing"><li>Resume</li></a>
+          </ul>
         </div>
-          <nav role="navigation">
-            <div id="menuToggle">
-              <input type="checkbox" />
-              <span></span>
-              <span></span>
-              <span></span>
-              <ul id="menu">
-                <a href="about.html"><li>About</li></a>
-                <a href="resume.html"><li>Resume</li></a>
-              </ul>
-            </div>
-          </nav>
+      </div>
+      </nav>
       </header>
 
       <section class="about-col">
         <div class="marbleAbout">
           <div class="headlineMobile"><h1>About Me</h1></div>
           <div class="headshot"><img class="headshotPic"src="assets/headshot.png" alt="project logo"></div>
-          <h2>I am a UX/UI designer from San Diego who creates solutions through thoughtful design.</h2>
         </div>
           <div class="bio">
             <div class="headlineDesktop"><h1>About Me</h1></div>
