@@ -34,7 +34,7 @@
   }
 
   .CaseStudy {
-    background-image: url("../assets/marble.png");
+    background-image: url("../assets/Marble.png");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -203,6 +203,10 @@
       margin-left: auto;
       margin-right: auto;
       width: 82%;
+    }
+
+    .teal {
+      background-color: #9BBCB1
     }
 }
 
