@@ -161,7 +161,7 @@
    * prefixes.
    */
 
-  body
+  html, body
   {
     overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
   }
