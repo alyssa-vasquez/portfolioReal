@@ -40,7 +40,7 @@
   }
 
   .shortParagraph {
-    padding: 20px 15% 0px 15%;
+    padding: 20px 10% 0px 10%;
     text-align: center;
   }
 
@@ -91,7 +91,7 @@
     font-family: 'Bodoni MT', 'Didot';
     font-size: 1.8rem;
     line-height: 2.5rem;
-    padding: 15px 5% 15px 5%;
+    padding: 15px 7% 15px 7%;
   }
 
   .three-col img{
@@ -110,7 +110,51 @@
   }
 
 
-/* end of mobile */
+
+
+
+
+
+
+
+
+
+
+/* Mobile media query */
+@media (min-width: 80px) and (max-width: 480px) {
+
+  .paragraphThree {
+    text-align: center;
+  }
+
+  h1 {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  h2 {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  P {
+    padding: 7% 10% 7% 10%;
+  }
+
+  .teal {
+    background-color: #9BBCB1
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -134,15 +178,20 @@
     }
 
     p {
-      font-size: 2rem;
-      padding: 1.5rem 10% 1.5rem 10%;
+      font-size: 2.2rem;
+      padding: 2rem 10% 2rem 10%;
+      line-height: 33px;
+    }
+
+    .personaInfo {
+      font-size: 2.2rem;
       line-height: 33px;
     }
 
     .greenbackground {
-      font-size: 2rem;
+      font-size: 2.2rem;
       line-height: 33px;
-      padding: 2rem 10% 2rem 10%;
+      padding: 2.5rem 10% 2.5rem 10%;
     }
 
     .three-col img {
@@ -177,8 +226,20 @@
     }
 
     p {
+      font-size: 2.5rem;
       padding: 30px 10% 30px 10%;
-      line-height: 37px;
+      line-height: 40px;
+    }
+
+    .personaInfo {
+      font-size: 2rem;
+      line-height: 40px;
+    }
+
+    .greenbackground {
+      font-size: 2.5rem;
+      line-height: 33px;
+      padding: 2rem 10% 2rem 10%;
     }
 
     .projectLogo {
@@ -224,10 +285,7 @@
   .greenbackground {
     font-size: 2.7rem;
     line-height: 37px;
-    padding: 30px 1% 30px 1%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 82%;
+    padding: 30px 10% 30px 10%;
   }
 
   .Personas {
