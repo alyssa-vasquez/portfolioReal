@@ -12,30 +12,18 @@
   </head>
   <body>
     <div class="container">
-      <header>
-      <!--    Made by Erik Terwan    -->
-      <!--   24th of November 2015   -->
-      <!--        MIT License        -->
-      <nav role='navigation'>
-        <div class="navbar">
-          <div class="logo">
-            <a href="index.html"><img src="assets/PersonalLogoDesktop.png" alt="logo"></a>
-          </div>
-        <div id="menuToggle">
-          <input type="checkbox" />
-          <span></span>
-          <span></span>
-          <span></span>
-
-          <ul id="menu">
-            <a href="index.html"><li>Home</li></a>
-            <a href="about.html"><li>About</li></a>
-            <a href="project.html"><li>Projects</li></a>
-            <a href="https://docs.google.com/document/d/1942RVJ6q-0-kyYQwr1xV4AfV1MTC5_EaD55E7C-2bvs/edit?usp=sharing"><li>Resume</li></a>
-          </ul>
+      <header class="header">
+        <div class="logo">
+          <a href="index.html"><img src="assets/PersonalLogoDesktop.png" alt="logo"></a>
         </div>
-      </div>
-      </nav>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="https://docs.google.com/document/d/1942RVJ6q-0-kyYQwr1xV4AfV1MTC5_EaD55E7C-2bvs/edit?usp=sharing">Resume</a></li>
+        </ul>
       </header>
 
       <section class="CaseStudy">
@@ -140,6 +128,8 @@
         <div class="teal">
           <div class="mobileImage"><img src="assets/wireframesMobile.png" alt="wireframes"></div>
           <div class="mobileImage"><img src="assets/wireframesMobile1.png" alt="wireframes"></div>
+          <div class="tabletImage"><img src="assets/wireframesTablet.png" alt="wireframes"></div>
+          <div class="tabletImage"><img src="assets/wireframesTablet1.png" alt="wireframes"></div>
         </div>
         <div class="desktopImage"><img src="assets/wireframesDesktop.png" alt="wireframes"></div>
 
@@ -156,6 +146,7 @@
         <h2>Prototype &amp; Testing</h2>
         <p>Various screen were voted on by users to determine their preference. Users voted on the sign up and login screens for the mobile version and chose the simplest entry forms. They voted on the background image for the desktop version sign up page and well as the main layout for the landing page.</p>
         <div class="mobileImage"><img src="assets/prefmobile.png" alt="preferance test"></div>
+        <div class="tabletImage"><img src="assets/prefTablet.png" alt="preferance test"></div>
         <div class="desktopImage"><img src="assets/prefdesktop1.png" alt="preferance test"></div>
         <div class="desktopImage"><img src="assets/prefdesktop2.png" alt="preferance test"></div>
         <div class="paragraph"><p>Then users were tested on the clickable prototype to ensure that the app is easy to use and users understand how to navigate it. It was important to include a script with basic information about the app and what tasks they needed to complete. Tasks for the mobile version included signing up, adding a progress picture, adding a check in, adding a new meal plan, finding the workout for day one and signing out.<br /><br />The feedback supported the functionality of the desktop and mobile versions of the app. Users had a really easy time navigating through the clickable prototypes and nothing need to be changed based on their feedback.</p></div>

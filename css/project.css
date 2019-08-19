@@ -29,7 +29,7 @@
   }
 
   .pageTitle {
-    padding-top: 15px;
+    padding-top: 75px;
     padding-bottom: 30px;
   }
 
@@ -76,10 +76,17 @@
     width: 100%;
   }
 
+  /* hide tablet images */
+    .tabletImage img {
+      display: none;
+    }
+
 /* Desktop and mobile images */
   .bothImage img {
     width: 100%;
   }
+
+
 
 /* hide desktop image for comp */
   .desktopImage img {
@@ -121,7 +128,7 @@
 
 
 /* Mobile media query */
-@media (min-width: 80px) and (max-width: 480px) {
+@media (min-width: 80px) and (max-width: 487px) {
 
   .paragraphThree {
     text-align: center;
@@ -144,6 +151,54 @@
   .teal {
     background-color: #9BBCB1
   }
+
+  .bothImage img {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Landscape media query */
+@media (min-width: 488px) and (max-width: 767px) {
+
+  .paragraph {
+    font-size: 2.2rem;
+  }
+
+  .teal {
+    background-color: #9BBCB1
+  }
+
+  .tabletImage img {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .bothImage img {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+
+  /* hide mobile for desktop */
+    .mobileImage img {
+      display: none;
+    }
+
+  /* show desktop image for comp */
+    .desktopImage img {
+      display: none;
+    }
+
 }
 
 
@@ -183,6 +238,10 @@
       line-height: 33px;
     }
 
+    .pageTitle {
+      padding-top: 90px;
+    }
+
     .personaInfo {
       font-size: 2.2rem;
       line-height: 33px;
@@ -199,15 +258,28 @@
       width: 130px;
     }
 
-    .wireframes img {
-      margin-left: auto;
-      margin-right: auto;
-      width: 82%;
-    }
+    /* Desktop and mobile images */
+      .bothImage img {
+        width: 100%;
+        padding-bottom: 20px;
+      }
 
-    .teal {
-      background-color: #9BBCB1
-    }
+    /* hide mobile for desktop */
+      .mobileImage img {
+        display: none;
+      }
+
+    /* hide tablet images */
+        .tabletImage img {
+          display: none;
+        }
+
+      /* show desktop image for comp */
+        .desktopImage img {
+          display: block;
+          width: 100%;
+          padding-bottom: 20px;
+        }
 }
 
 
@@ -233,6 +305,10 @@
       font-size: 2.5rem;
       padding: 30px 10% 30px 10%;
       line-height: 40px;
+    }
+
+    .pageTitle {
+      padding-top: 90px;
     }
 
     .personaInfo {
@@ -278,13 +354,28 @@
     display: none;
   }
 
+/* hide tablet images */
+  .tabletImage img {
+    display: none;
+  }
+
   /* show desktop image for comp */
     .desktopImage img {
       display: block;
       margin-left: auto;
       margin-right: auto;
       width: 80%;
+      padding-bottom: 30px;
     }
+
+/* Desktop and mobile images */
+      .bothImage img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        padding-bottom: 30px;
+      }
 
   .greenbackground {
     font-size: 2.7rem;

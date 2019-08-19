@@ -27,7 +27,7 @@
 
 @media (min-width: 80px) and (max-width: 767px) {
   h1 {
-    padding-top: 5%;
+    padding-top: 70px;
     padding-bottom: 5%;
   }
 
@@ -63,14 +63,14 @@
     }
 
     .headshot img {
-      margin-top: 10rem;;
+      margin-top: 15rem;;
       height: 23rem;
       width: 23rem;
     }
 
     h1 {
       font-size: 32px;
-      padding-top: 40px;
+      padding-top: 110px;
       padding-bottom: 40px;
     }
 
@@ -115,14 +115,14 @@
     }
 
     .headshot img {
-      margin-top: 10rem;;
+      margin-top: 17rem;;
       height: 27rem;
       width: 27rem;
     }
 
     h1 {
       font-size: 40px;
-      padding-top: 70px;
+      padding-top: 130px;
       padding-bottom: 50px;
     }
 
