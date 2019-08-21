@@ -128,7 +128,7 @@
 
 
 /* Mobile media query */
-@media (min-width: 80px) and (max-width: 487px) {
+@media (min-width: 1px) and (max-width: 487px) {
 
   .paragraphThree {
     text-align: center;
@@ -168,6 +168,11 @@
 
 /* Landscape media query */
 @media (min-width: 488px) and (max-width: 767px) {
+
+  p {
+    padding: 4% 8% 4% 8%;
+    line-height: 34px;
+  }
 
   .paragraph {
     font-size: 2.2rem;
@@ -227,7 +232,7 @@
 
   /* green font */
     h2 {
-      font-size: 2.8rem;
+      font-size: 2.9rem;
       padding-top: 15px;
       /* padding-bottom: 10px; */
     }
@@ -235,7 +240,7 @@
     p {
       font-size: 2.2rem;
       padding: 2rem 10% 2rem 10%;
-      line-height: 33px;
+      line-height: 38px;
     }
 
     .pageTitle {
@@ -296,7 +301,7 @@
 
   /* green font */
     h2 {
-      font-size: 3.4rem;
+      font-size: 3.6rem;
       padding-top: 15px;
       padding-bottom: 10px;
     }
@@ -304,7 +309,7 @@
     p {
       font-size: 2.5rem;
       padding: 30px 10% 30px 10%;
-      line-height: 40px;
+      line-height: 43px;
     }
 
     .pageTitle {
@@ -332,13 +337,19 @@
       padding-right: 25%;
     }
 
-/* button */
+    .TwoColumn {
+      display: flex;
+      padding-left: 12%;
+      padding-right: 12%;
+    }
 
 
   .ThreeColumn {
     display: flex;
     padding-top: 50px;
     padding-bottom: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .three-col {

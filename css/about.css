@@ -3,7 +3,13 @@
   }
 
   h1 {
+    padding-top: 80px;
+    padding-bottom: 30px;
     text-align: center;
+  }
+
+  P {
+    padding: 7% 10% 7% 10%;
   }
 
   .marbleAbout {
@@ -25,17 +31,24 @@
   }
 
 
-@media (min-width: 80px) and (max-width: 767px) {
+
+
+/* Landscape media query */
+@media (min-width: 545px) and (max-width: 767px) {
   h1 {
-    padding-top: 70px;
-    padding-bottom: 5%;
+    font-size: 4rem;
+    padding-top: 100px;
+    padding-bottom: 40px;
   }
 
   P {
-    padding: 7% 10% 7% 10%;
+    padding: 7% 8% 7% 8%;
+    line-height: 3.2rem;
   }
+
 }
-/* end of mobile */
+
+
 
 
 
@@ -76,7 +89,7 @@
 
     p {
       font-size: 2.2rem;
-      line-height: 3.5rem;
+      line-height: 4rem;
       padding: 0 10% 50px 10%;
     }
 

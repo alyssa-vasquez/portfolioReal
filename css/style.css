@@ -32,7 +32,7 @@
   p {
   font-family: 'Bodoni MT', 'Didot';
   font-size: 1.8rem;
-  line-height: 2.7rem;
+  line-height: 3rem;
   }
 
   h6 {
@@ -220,6 +220,7 @@
     font-size: 2em;
     padding: 10px 20px;
     text-decoration: none;
+    padding-bottom: 0px;
   }
 
   /* menu */
@@ -236,7 +237,7 @@
     cursor: pointer;
     display: inline-block;
     float: right;
-    padding: 28px 20px;
+    padding: 27.5px 20px;
     position: relative;
     user-select: none;
     height: 4.5rem;
@@ -516,6 +517,7 @@
   .btn {
     height: 5rem;
     width: 28rem;
+    border: none;
   }
 
   .link {
