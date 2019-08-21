@@ -97,8 +97,8 @@
     background-color: #9BBCB1;
     font-family: 'Bodoni MT', 'Didot';
     font-size: 1.8rem;
-    line-height: 2.5rem;
-    padding: 15px 7% 15px 7%;
+    line-height: 30px;
+    padding: 4% 8% 4% 8%;
   }
 
   .three-col img{
@@ -128,7 +128,7 @@
 
 
 /* Mobile media query */
-@media (min-width: 1px) and (max-width: 487px) {
+@media (min-width: 1px) and (max-width: 544px) {
 
   .paragraphThree {
     text-align: center;
@@ -145,7 +145,12 @@
   }
 
   P {
-    padding: 7% 10% 7% 10%;
+    padding: 5% 10% 5% 10%;
+  }
+
+  .greenbackground {
+    font-size: 1.8rem;
+    padding: 5% 10% 5% 10%;
   }
 
   .teal {
@@ -167,12 +172,17 @@
 
 
 /* Landscape media query */
-@media (min-width: 488px) and (max-width: 767px) {
+@media (min-width: 545px) and (max-width: 767px) {
 
   p {
     padding: 4% 8% 4% 8%;
     line-height: 34px;
   }
+
+  .greenbackground {
+      padding: 4% 8% 4% 8%;
+      line-height: 34px;
+    }
 
   .paragraph {
     font-size: 2.2rem;
