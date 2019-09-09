@@ -84,6 +84,7 @@
   .btn {
   background-color: #9BBCB1;
   border-radius: .5rem;
+  border: none; 
   grid-column: 3;
   height: 3.5rem;
   width: 18.5rem;
