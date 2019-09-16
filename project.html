@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
+      <a name="top"></a>
       <header class="header">
         <div class="logo">
           <a href="index.html"><img src="assets/PersonalLogoDesktop.png" alt="logo"></a>
@@ -22,7 +24,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="project.html">Projects</a></li>
-          <li><a href="https://docs.google.com/document/d/1942RVJ6q-0-kyYQwr1xV4AfV1MTC5_EaD55E7C-2bvs/edit?usp=sharing">Resume</a></li>
+          <li><a href="https://docs.google.com/document/d/1942RVJ6q-0-kyYQwr1xV4AfV1MTC5_EaD55E7C-2bvs/edit?usp=sharing" target="_blank">Resume</a></li>
         </ul>
       </header>
 
@@ -30,13 +32,18 @@
           <div class="pageTitle"><h1>Case Study</h1></div>
           <div class="BPMHomepageimg"><img class="BPMHomepage" src="assets/BPMhome.png" alt="project homepage"></div>
           <div class="shortParagraph"><p>BPM Fitness makes it easy for personal trainers and their clients to connect and share content.</p></div>
-          <div class="purpleButton"><button class="btn" type="button"><a class="link" href="https://invis.io/V2QDPSUM9UH">View InVision Prototype</a></button></div>
+          <div class="purpleButton"><button class="btn" type="button"><a class="link" href="https://invis.io/V2QDPSUM9UH" target="_blank">View InVision Prototype</a></button></div>
       </section>
 
       <section class="TwoColumn">
         <div class="two-col">
           <h1>Role</h1>
-          <h2>UX Design<br />Visual Design<br />Brand &amp; Identity</h2>
+          <h2>UX/UI Design<br />User Research<br />Visual Design<br />Brand &amp; Identity</h2>
+        </div>
+
+        <div class="two-col">
+          <h1>Deliverables</h1>
+          <h2>User Survey<br />User Personas<br />Competetive Analysis<br />User Stories &amp; Flows<br />Prototypes &amp; Wireframes<br />User Testing &amp; Hi-Fi Mockups</h2>
         </div>
 
         <div class="two-col">
@@ -72,20 +79,40 @@
         <h1>Discovery Phase</h1>
         <h2>Competitive Analysis</h2>
         <div class="paragraph"><p>The main apps on the market that connect personal trainers with clients are Gain Fitness and My PT Hub. Both apps promise trainers they can build their business and clientele. However, these apps are marketed to the trainers, not their clients and do not allow for two-way communication.</p></div>
+        <div class="SWOT">
+          <li>My PT Hub has great features like tracking progress pictures, measurements and nutrition sections but clients and trainers complain about the app not being intuitive.<br /><br /></li>
+          <li>Gain Fitness primarily offers self-guided workout plans and personal training is only offered in four major cities.<br /><br /></li>
+          <li>Fitness Builder give clients access to a library of workouts and videos and allows them to track their results and compare them with other users, however, users complain about the functionality of the app.</li>
+        </div>
         <div class="desktopImage"><img src="assets/compDesktop.png" alt="competition pages"></div>
         <div class="mobileImage"><img src="assets/compMobile.png" alt="competition pages"></div>
+        <div class="tabletImage"><img src="assets/compMobile.png" alt="wireframes"></div>
+        <div class="purpleButton"><button class="btn" type="button"><a class="link" href="https://docs.google.com/document/d/1Vx0c4T6dtDK_iRNjbd3oYk_cRXWMXv6GvgLmwlPAVz4/edit?usp=sharing" target="_blank">View SWOT Analysis</a></button></div>
 
           <!-- Survey Section -->
         <h2>User Survey</h2>
         <p>I began with a survey to learn the following information:<br />What users use cloud storage for?<br />What features they use and what features they want?<br />How important is sharing files, real time collaboration, easy organization and file recovery?</p>
-        <div class="greenbackground">
+
+        <!-- horizontal bar chart -->
+        <div class="horizontalBar">
+            <canvas id="bar-chart-horizontal" ></canvas>
+        </div>
+
+        <!-- doughnut chart -->
+        <div class="doughnutChart">
+            <canvas id="myDoughnutChart" ></canvas>
+        </div>
+
+
+        <!-- <div class="greenbackground">
           <div class="paragraph">73% of participants were interested in personal training and fitness. Of those participants:<br /><br />
             <li>91% were interested in viewing workouts, recipes and nutritional information</li>
             <li>82% were interested in uploading progress pictures and leaving comments</li>
             <li>73% wanted access to pictures and videos of exercises</li>
-          </div>
+          </div> -->
         </div>
-        <div class="paragraph"><p>Of the participants that were interested in a personal training app, 55% are men, 72% are between the ages 18 and 34 and 55% have a bachelor's degree. This information helped me to understand potential users when developing this application.</p></div>
+        <div class="paragraph"><p>It is important to understand what features potential users want so that those features are prioritized in the design process. It is also important to note that majority of potential users are younger than 35 years of age, indicating they would most likely be comfortable with this app.</p></div>
+        <div class="purpleButton"><button class="btn" type="button"><a class="link" href="https://forms.gle/43a5wRTrfg4uTWAf9" target="_blank">View User Survey</a></button></div>
 
           <!-- Begining of Persona Section -->
         <h2>Personas</h2>
@@ -113,6 +140,8 @@
           <div class="paragraph"><p>Brandon spends a lot of time working out and lifting weights in the school gym. He would like an app that allows him to view training materials and guides for his specific goals.<br /><br />Brandon would like access to recipes to help him gain muscle as quickly as possible without relying on so many supplements.</p></div>
         </div>
       </section>
+      <div class="purpleButton"><button class="btn" type="button"><a class="link" href="https://www.figma.com/file/X2icg1jnomSaN4C2WEbnV9Ra/BPM-Personas?node-id=0%3A1" target="_blank">View User Personas</a></button></div>
+
 
       <section class="Examples">
 
@@ -132,6 +161,7 @@
           <div class="tabletImage"><img src="assets/wireframesTablet1.png" alt="wireframes"></div>
         </div>
         <div class="desktopImage"><img src="assets/wireframesDesktop.png" alt="wireframes"></div>
+        <div class="purpleButton"><button class="btn" type="button"><a class="link" href="https://www.figma.com/file/OnlUNtodWrcP6MXcIjAh5H/BPM-Mobile-and-Web-Wireframes?node-id=0%3A1" target="_blank">View Wireframes</a></button></div>
 
           <!-- VisualDesign Section -->
         <h1>Visual Design </h1>
@@ -142,6 +172,8 @@
         <h2>Branding &amp; Identity</h2>
         <div class="paragraph"><p>The brand characteristics are strength, energy, fitness, health, versatility and flexibility.<br /><br />I chose the magenta color for the main color for the mobile app for the clients because it is bright and energetic without being overwhelming. The teal color is the main color for the desktop/web version of the app for trainers because blue is the color of trustworthiness and responsibility but the green hue makes it more vibrant and energetic.</p></div>
         <div class="bothImage"><img src="assets/colors.png" alt="project colors"></div>
+        <div class="bothImage"><img src="assets/Typography.jpg" alt="project colors"></div>
+        <div class="purpleButton"><button class="btn" type="button"><a class="link" href="file:///Users/alyssavasquez/Downloads/BPM%20Style%20Guide.pdf" target="_blank">View Style Guide</a></button></div>
 
         <h2>Prototype &amp; Testing</h2>
         <p>Various screen were voted on by users to determine their preference. Users chose the simplest entry forms for the mobile sign up and login screens. They voted on the background image for the desktop version sign up page as well as the main layout for the landing page.</p>
@@ -152,7 +184,7 @@
         <div class="paragraph"><p>Then users were tested on the clickable prototype to ensure that users understand how to navigate it. It was important to include a script with basic information about the app and what tasks they needed to complete. Tasks for the mobile version included signing up, adding a progress picture, adding a check in, adding a new meal plan, finding the workout for day one and signing out.<br /><br />The feedback supported the functionality of the desktop and mobile version of the app. Users had an easy time navigating through the clickable prototypes therefore, nothing needed to be changed.</p></div>
       </section>
 
-        <div class="purpleButton"><button class="btn" type="button"><a class="link" href="https://invis.io/V2QDPSUM9UH">View InVision Prototype</a></button></div>
+      <div class="purpleButton"><button class="btn" type="button"><a class="link" href="https://www.figma.com/file/tSIAkqgpM8uO2gOWjyQ4BO/BPM-Mobile-and-Web-HiFis?node-id=0%3A1" target="_blank">View Mock Ups</a></button></div>
 
       <!-- Conclusion Section -->
       <section class="Examples">
@@ -160,20 +192,31 @@
         <div class="paragraph"><p>I had a great experience building this app and coming up with an idea that i believe will do well in the fitness market. Researching and analyzing the competition was extremely important in verifying if there was space for an app like this. Looking at the features of the competition helped me determine what features BPM Fitness needed to stay competitive as well as additional features to set us apart.<br /><br />At first, I took on a big project with many features that I later realized were beyond the scope of this project. Had I had more time, I would have added features such as the ability to add comments and recover deleted files. I’m glad I was able to determine the scale of this project early on and believe it came out with all the necessary features.</p></div>
       </section>
 
+      <div class="purpleButton"><button class="btn" type="button"><a class="link" href="https://invis.io/V2QDPSUM9UH" target="_blank">View InVision Prototype</a></button></div>
+      <!-- Return to Top -->
+
+
+      <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+
+      <a class = "chevron top" href="#top"></a>
+
       <footer>
         <div class="getInTouch"><h6>Get in Touch</h6></div>
         <div class="footSentence"><h6>Thanks for stopping by and checking out my work. Feel free to reach out anytime to talk about UX.</h6></div>
         <ul>
-          <li><a href="mailto:alyssa.n.vasquez@outlook.com"><img class="contact" src="assets/email.png" alt="email"></a></li>
-          <li><a href="https://docs.google.com/document/d/1942RVJ6q-0-kyYQwr1xV4AfV1MTC5_EaD55E7C-2bvs/edit?usp=sharing"><img class="contact" src="assets/linkedin.png" alt="linkedin"></a></li>
-          <li><a href="https://github.com/alyssa-vasquez"><img class="contact" src="assets/github-filled.png" alt="github"></a></li>
+          <li><a href="mailto:alyssa.n.vasquez@outlook.com" target="_blank"><img class="contact" src="assets/email.png" alt="email"></a></li>
+          <li><a href="https://docs.google.com/document/d/1942RVJ6q-0-kyYQwr1xV4AfV1MTC5_EaD55E7C-2bvs/edit?usp=sharing" target="_blank"><img class="contact" src="assets/linkedin.png" alt="linkedin"></a></li>
+          <li><a href="https://github.com/alyssa-vasquez" target="_blank"><img class="contact" src="assets/github-filled.png" alt="github"></a></li>
         </ul>
       </footer>
-    </div>
 
+  </div>
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/other.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146156668-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];

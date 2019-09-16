@@ -8,6 +8,7 @@
 
   html {
   font-size: 10px;
+  scroll-behavior: smooth;
   }
 
   h1 {
@@ -20,12 +21,14 @@
   color: #9BBCB1;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.5rem;
+  padding-left: 5%;
+  padding-bottom: 25px;
   }
 
   h3 {
   font-family: 'Bodoni MT', 'Didot';
   font-size: 2.3rem;
-  padding: 5% 5% 5% 5%;
+  padding: 5%;
   line-height: 2.5rem;
   }
 
@@ -48,9 +51,16 @@
   background-size: cover;
   }
 
-  .BPMLogo {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+  #scroll {
+    scroll-behavior: smooth;
+  }
+
+  .project{
+    background-color: #ffffff;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-bottom: 70px;
+    padding-top: 50px;
   }
 
   .projectLogo {
@@ -60,8 +70,12 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
+
   .BPMHomepage {
-  width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
   }
 
   .BPMHomepageimg img{
@@ -130,7 +144,11 @@
   width: 3rem;
   }
 
-
+  .copywrite h6 {
+    font-size: 12px;
+    text-align: center;
+    padding-bottom: 10px;
+  }
 
 
 
@@ -312,10 +330,10 @@
 
 
 /* Mobile media query */
-@media (min-width: 80px) and (max-width: 544px) {
+/* @media (min-width: 80px) and (max-width: 544px) {
 
 
-}
+} */
 
 
 
@@ -332,6 +350,11 @@
     font-size: 2.2rem;
   }
 
+  h2 {
+    font-size: 3rem;
+    padding-left: 8%;
+  }
+
   h3 {
   font-family: 'Bodoni MT', 'Didot';
   font-size: 2.5rem;
@@ -342,6 +365,7 @@
   .header li a {
     font-size: 2rem;
   }
+
 
 }
 
@@ -391,11 +415,18 @@
   }
 
 
+  .textBox {
+    padding-top: 100px;
+    padding-bottom: 75px;
+  }
 
+  h2 {
+    font-size: 3.5rem;
+  }
 
   h3 {
-  font-size: 3.5rem;
-  line-height: 4.5rem;
+  font-size: 3.8rem;
+  line-height: 5rem;
   }
 
   /* footer */
@@ -480,7 +511,8 @@
   }
 
   h2 {
-    font-size: 3.4rem;
+    font-size: 4rem;
+    padding-left: 7%;
   }
 
   h3 {
