@@ -21,8 +21,6 @@
   color: #9BBCB1;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 2.5rem;
-  padding-left: 5%;
-  padding-bottom: 25px;
   }
 
   h3 {
@@ -55,35 +53,32 @@
     scroll-behavior: smooth;
   }
 
+  .recent h2{
+    padding-top: 90px;
+    margin-top: -60px;
+    padding-left: 5%;
+    padding-bottom: 30px;
+  }
+
   .project{
     background-color: #ffffff;
     width: 75%;
     margin-left: 12.5%;
     margin-bottom: 70px;
-    padding-top: 50px;
   }
 
-  .projectLogo {
-  grid-column: 3;
-  height: 12.5rem;
-  width: 20rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-
-  .BPMHomepage {
+  .productShotImg {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 12%;
+    margin-right: 18%;
+  }
+
+  .productShot img {
     width: 70%;
   }
 
-  .BPMHomepageimg img{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
   .BPMintro {
-  padding: 2.5rem 15% 2.5rem 15%;
+  padding: 2.5rem 10% 2.5rem 10%;
   }
 
   /* button */
@@ -506,18 +501,27 @@
     display: none;
   }
 
+
+  .intro {
+      height: 730px;
+  }
+
+  .textBox {
+    padding-top: 150px;
+  }
+
   h1 {
     font-size: 4rem;
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: 5rem;
     padding-left: 7%;
   }
 
   h3 {
     font-size: 5rem;
-    line-height: 5.5rem;
+    line-height: 7.5rem;
     padding-left: 7%;
   }
 
@@ -541,10 +545,10 @@
     width: 24rem;
   }
 
-  .BPMintro {
+  /* .BPMintro {
     padding-left: 25%;
     padding-right: 25%;
-  }
+  } */
 
 /* button */
 

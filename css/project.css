@@ -52,26 +52,18 @@
     background-image: url("../assets/Marble.png");
     background-repeat: no-repeat;
     background-size: cover;
+		padding-bottom: 2%;
+		margin-bottom: 3%;
   }
 
-  .shortParagraph {
-    padding: 20px 10% 0px 10%;
-    text-align: center;
-  }
+	.BPMintro {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
 
-  .BPMHomepage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    border-radius: 2px;
-  }
-
-
-
-  .BPMHomepageimg img{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
+	.project {
+		padding-bottom: 25px;
+	}
 
   .purpleButton {
   padding-bottom: 25px;
@@ -114,7 +106,6 @@
     font-size: 1.8rem;
     padding: 0% 8% 4% 8%;
     line-height: 30px;
-
   }
 
   .horizontalBar {
@@ -124,7 +115,9 @@
 
   .doughnutChart {
     width: 65%;
-    padding-left: 15%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 25px;
   }
 
   .greenbackground {
@@ -149,6 +142,66 @@
     line-height: 2.5rem;
     padding-top: 2.5%;
   }
+
+	.personaGoals{
+		font-family: 'Bodoni MT', 'Didot';
+		font-size: 1.8rem;
+		line-height: 3rem;
+		padding: 5% 10% 5% 10%;
+		line-height: 30px;
+	}
+
+/* table */
+
+	.table-wrapper{
+	    margin: 10px 70px 70px;
+	    box-shadow: 0px 10px 15px rgba( 0, 0, 0, 0.2 );
+			height: 300px;
+			overflow-y: scroll;
+	}
+
+	.fl-table {
+	    border-radius: 5px;
+	    font-size: 12px;
+	    font-weight: normal;
+	    border: none;
+	    border-collapse: collapse;
+	    width: 100%;
+	    max-width: 100%;
+	    white-space: nowrap;
+	    background-color: white;
+	}
+
+	.fl-table td, .fl-table th {
+	    text-align: center;
+	    padding: 8px;
+	}
+
+	.fl-table td {
+	    border-right: 1px solid #f8f8f8;
+			font-family: 'Bodoni MT', 'Didot';
+		  font-size: 1.5rem;
+	}
+
+
+	thead th {
+		position: sticky;
+		top: 0;
+	}
+
+	.fl-table thead th {
+	    color: #ffffff;
+	    background: #324960;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1.6rem;
+	}
+
+
+	.fl-table tr:nth-child(even) {
+	    background: #F8F8F8;
+	}
+
+
 
 
 
@@ -196,11 +249,6 @@
     width: 100%;
   }
 }
-
-
-
-
-
 
 
 
@@ -329,6 +377,34 @@
           width: 100%;
           padding-bottom: 20px;
         }
+
+			/* charts */
+
+			.charts {
+				max-width: 70%;
+				display: flex;
+			}
+
+			.doughnutChart {
+
+			}
+
+		/* .charts {
+			display: flex;
+		}
+
+		.doughnutChart {
+			flex: 50%;
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+
+		.horizontalBar {
+			flex: 50%;
+			padding-left: 5%;
+			padding-right: 5%;
+		} */
+
 }
 
 
@@ -374,11 +450,6 @@
     .projectLogo {
       height: 24rem;
       width: 40rem;
-    }
-
-    .BPMintro {
-      padding-left: 25%;
-      padding-right: 25%;
     }
 
     .TwoColumn {

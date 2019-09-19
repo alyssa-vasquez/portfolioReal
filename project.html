@@ -30,9 +30,13 @@
 
       <section class="CaseStudy">
           <div class="pageTitle"><h1>Case Study</h1></div>
-          <div class="BPMHomepageimg"><img class="BPMHomepage" src="assets/BPMhome.png" alt="project homepage"></div>
-          <div class="shortParagraph"><p>BPM Fitness makes it easy for personal trainers and their clients to connect and share content.</p></div>
-          <div class="purpleButton"><button class="btn" type="button"><a class="link" href="https://invis.io/V2QDPSUM9UH" target="_blank">View InVision Prototype</a></button></div>
+
+          <div class="project">
+            <div class="productShot"><img class="productShotImg" src="assets/productShots.png" alt="project product shots"></div>
+            <div class="BPMintro"><p>BPM Fitness makes it easy for personal trainers and their clients to connect and share content.</p></div>
+            <div class="purpleButton"><button class="btn" type="button"><a class="link" href="https://invis.io/V2QDPSUM9UH" target="_blank">View InVision Prototype</a></button></div>
+          </div>
+
       </section>
 
       <section class="TwoColumn">
@@ -93,24 +97,20 @@
         <h2>User Survey</h2>
         <p>I began with a survey to learn the following information:<br />What users use cloud storage for?<br />What features they use and what features they want?<br />How important is sharing files, real time collaboration, easy organization and file recovery?</p>
 
-        <!-- horizontal bar chart -->
-        <div class="horizontalBar">
-            <canvas id="bar-chart-horizontal" ></canvas>
+        <div class="charts">
+
+          <!-- horizontal bar chart -->
+          <div class="horizontalBar">
+              <canvas id="bar-chart-horizontal"></canvas>
+          </div>
+
+          <!-- doughnut chart -->
+          <div class="doughnutChart">
+              <canvas id="myDoughnutChart"></canvas>
+          </div>
+
         </div>
 
-        <!-- doughnut chart -->
-        <div class="doughnutChart">
-            <canvas id="myDoughnutChart" ></canvas>
-        </div>
-
-
-        <!-- <div class="greenbackground">
-          <div class="paragraph">73% of participants were interested in personal training and fitness. Of those participants:<br /><br />
-            <li>91% were interested in viewing workouts, recipes and nutritional information</li>
-            <li>82% were interested in uploading progress pictures and leaving comments</li>
-            <li>73% wanted access to pictures and videos of exercises</li>
-          </div> -->
-        </div>
         <div class="paragraph"><p>It is important to understand what features potential users want so that those features are prioritized in the design process. It is also important to note that majority of potential users are younger than 35 years of age, indicating they would most likely be comfortable with this app.</p></div>
         <div class="purpleButton"><button class="btn" type="button"><a class="link" href="https://forms.gle/43a5wRTrfg4uTWAf9" target="_blank">View User Survey</a></button></div>
 
@@ -125,19 +125,55 @@
         <div class="three-col">
           <img src="assets/Trainer.png" alt="Mark">
           <div class="personaInfo">Mark<br />35, Male<br />Fitness Trainer<br />Los Angeles, CA</div>
-          <div class="paragraph"><p>Mark is interesed in the idea of a cloud-based sharing application designed to connect personal trainers with their clients, especially for his clients that live in other cities.<br /><br />This app would also help Mark keep track of his LA clients’ various routines, goals, progress and diets, something he admits he could use help with.</p></div>
+
+          <div class="personaGoals">
+            <h2>Goals</h2>
+            <li>Build his clientele</li>
+            <li>Organize many different guides</li>
+            <li>Keep track of clients progress</li>
+            <h2>Motivations</h2>
+            <li>Organization, communication and analysis</li>
+            <h2>Frustrations</h2>
+            <li>Similar apps are not customizable</li>
+            <li>Other platforms can be very expensive for trainers </li>
+          </div>
+
         </div>
 
         <div class="three-col">
           <img src="assets/Giselle.png" alt="Giselle">
           <div class="personaInfo">Giselle<br />28, Female<br />Photographer<br />San Diego, CA</div>
-          <div class="paragraph"><p>Giselle is dedicated to working out three times a week, but her busy schedule makes it hard to work with personal trainers. Giselle likes to be able to workout from her home with limited equipment.<br /><br />She wants a plan tailored to her specific goals, diet/recipes. She purchased her last workout plan online and it did not fit her exact needs nor allow for collaboration.</p></div>
+
+          <div class="personaGoals">
+            <h2>Goals</h2>
+            <li>Access to cusomized workouts</li>
+            <li>Excercise according to her schedule</li>
+            <li>Utilize recipes and diet plan</li>
+            <h2>Motivations</h2>
+            <li>Convenience, customization and practicality</li>
+            <h2>Frustrations</h2>
+            <li>Online programs are generic</li>
+            <li>Her busy schedule makes it hard to workout with a trainer in-person</li>
+        </div>
+
         </div>
 
         <div class="three-col">
           <img src="assets/Brandon.png" alt="Brandon">
           <div class="personaInfo">Brandon<br />23, Male<br />Student<br />Boulder, CO</div>
-          <div class="paragraph"><p>Brandon spends a lot of time working out and lifting weights in the school gym. He would like an app that allows him to view training materials and guides for his specific goals.<br /><br />Brandon would like access to recipes to help him gain muscle as quickly as possible without relying on so many supplements.</p></div>
+
+          <div class="personaGoals">
+            <h2>Goals</h2>
+            <li>View training guides made specifically for his goals</li>
+            <li>Gain muscle quickly without relying on supplements</li>
+            <li>Access to recipes</li>
+            <h2>Motivations</h2>
+            <li>Fitness, organization and efficiency</li>
+            <h2>Frustrations</h2>
+            <li>Cloud sharing apps are not always intuitive</li>
+            <li>Working out with a trainer can be expensive </li>
+        </div>
+
         </div>
       </section>
       <div class="purpleButton"><button class="btn" type="button"><a class="link" href="https://www.figma.com/file/X2icg1jnomSaN4C2WEbnV9Ra/BPM-Personas?node-id=0%3A1" target="_blank">View User Personas</a></button></div>
@@ -149,6 +185,202 @@
         <h1>Information Architecture </h1>
         <h2>User Stories &amp; Flows</h2>
         <div class="paragraph"><p>User personas helped determine user stories. This perspective was necessary in thinking through a well-rounded app with the essential features for users. High priority stories included the onboarding process, logging in, adding, organizing and deleting content, and signing out.<br /><br />The same user stories became user flows, essentially a path of each task. Building the users flows was necessary in understanding how each page of the app worked, before diving right into the visual design.</p></div>
+
+        <div class="table-wrapper">
+              <table class="fl-table">
+                  <thead>
+                      <tr>
+                          <th>Role</th>
+                          <th>Task</th>
+                          <th>Importance</th>
+                      </tr>
+                  </thead>
+
+                  <tbody>
+                      <tr>
+                          <td>As a new client</td>
+                          <td>I want to sign up for an account</td>
+                          <td>High</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a new client</td>
+                          <td>I want to choose an account type</td>
+                          <td>High</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a new client</td>
+                          <td>I want to create my profile </td>
+                          <td>High</td>
+                      </tr>
+    <!-- new trainer -->
+                      <tr>
+                          <td>As a new trainer</td>
+                          <td>I want to sign up for an account</td>
+                          <td>High</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a new trainer</td>
+                          <td>I want to choose an account type</td>
+                          <td>High</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a new trainer</td>
+                          <td>I want to create my profile </td>
+                          <td>High</td>
+                      </tr>
+    <!-- returing client -->
+                      <tr>
+                          <td>As a new client</td>
+                          <td>I want to sign in</td>
+                          <td>High</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a returning client</td>
+                          <td>I want to see all my uploaded content</td>
+                          <td>High</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a returning client</td>
+                          <td>I want to access my trainers content</td>
+                          <td>High</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a returning client</td>
+                          <td>I want to upload pictures/videos</td>
+                          <td>High</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a returning client</td>
+                          <td>I want to upload documents</td>
+                          <td>High</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a returning client</td>
+                          <td>I want to edit my documents</td>
+                          <td>Medium</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a returning client</td>
+                          <td>I want to comment on content</td>
+                          <td>Medium</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a returning client</td>
+                          <td>I want to delete my uploaded pictures/video</td>
+                          <td>Low</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a returning client</td>
+                          <td>I want to delete my uploaded documents</td>
+                          <td>Low</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a returning client</td>
+                          <td>I want to create my profile </td>
+                          <td>Low</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a returning client</td>
+                          <td>I want to edit my profile</td>
+                          <td>Low</td>
+                      </tr>
+
+                      <tr>
+                          <td>As a returning client</td>
+                          <td>I want to log out</td>
+                          <td>Low</td>
+                      </tr>
+    <!-- returing trainer -->
+                        <tr>
+                            <td>As a returning trainer</td>
+                            <td>I want to sign in</td>
+                            <td>High</td>
+                        </tr>
+
+                        <tr>
+                            <td>As a returning trainer</td>
+                            <td>I want to see all my uploaded content</td>
+                            <td>High</td>
+                        </tr>
+
+                        <tr>
+                            <td>As a returning trainer</td>
+                            <td>I want to access my client's content</td>
+                            <td>High</td>
+                        </tr>
+
+                        <tr>
+                            <td>As a returning trainer</td>
+                            <td>I want to upload pictures/videos</td>
+                            <td>High</td>
+                        </tr>
+
+                        <tr>
+                            <td>As a returning trainer</td>
+                            <td>I want to upload documents</td>
+                            <td>High</td>
+                        </tr>
+
+                        <tr>
+                            <td>As a returning trainer</td>
+                            <td>I want to edit my documents</td>
+                            <td>Medium</td>
+                        </tr>
+
+                        <tr>
+                            <td>As a returning trainer</td>
+                            <td>I want to comment on content</td>
+                            <td>Medium</td>
+                        </tr>
+
+                        <tr>
+                            <td>As a returning trainer</td>
+                            <td>I want to delete my uploaded pictures/video</td>
+                            <td>Low</td>
+                        </tr>
+
+                        <tr>
+                            <td>As a returning trainer</td>
+                            <td>I want to delete my uploaded documents</td>
+                            <td>Low</td>
+                        </tr>
+
+                        <tr>
+                            <td>As a returning trainer</td>
+                            <td>I want to create my profile </td>
+                            <td>Low</td>
+                        </tr>
+
+                        <tr>
+                            <td>As a returning trainer</td>
+                            <td>I want to edit my profile</td>
+                            <td>Low</td>
+                        </tr>
+
+                        <tr>
+                            <td>As a returning trainer</td>
+                            <td>I want to log out</td>
+                            <td>Low</td>
+                        </tr>
+
+                  </tbody>
+              </table>
+        </div>
+
         <div class="bothImage"><img src="assets/Flows.png" alt="user flows"></div>
 
           <!-- Wireframes Section -->
@@ -208,6 +440,7 @@
           <li><a href="https://docs.google.com/document/d/1942RVJ6q-0-kyYQwr1xV4AfV1MTC5_EaD55E7C-2bvs/edit?usp=sharing" target="_blank"><img class="contact" src="assets/linkedin.png" alt="linkedin"></a></li>
           <li><a href="https://github.com/alyssa-vasquez" target="_blank"><img class="contact" src="assets/github-filled.png" alt="github"></a></li>
         </ul>
+        <div class="copywrite"><h6>Copyright 2019 designed and developed by Alyssa Vasquez</h6></div>
       </footer>
 
   </div>

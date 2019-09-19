@@ -8,14 +8,14 @@ var myDoughnutChart = new Chart(ctx, {
             {
               label: "Ages",
               backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-              data: [27.3,45.5,18.2,9.1], 
+              data: [27.3,45.5,18.2,9.1],
             }
           ]
         },
     options: {
           title: {
             display: true,
-            text: 'Age ranges of survey participants interested in personal training'
+            text: 'Ages of survey participants interested in personal training'
           }
         }
 });
@@ -29,7 +29,7 @@ var myDoughnutChart = new Chart(ctx, {
 new Chart(document.getElementById("bar-chart-horizontal"), {
     type: 'horizontalBar',
     data: {
-      labels: ["Recipes/nutritional info", "Training videos/pictures", "Upload progress pictures", "Leave comments/notes", "Upload videos/picture from the internet"],
+      labels: ["Recipes/nutritional info", "Training videos/pictures", "Upload progress pictures", "Leave comments/notes", "Upload videos/picture"],
       datasets: [
         {
           label: "Wanted features",
