@@ -1,17 +1,3 @@
-.chevron::before {
-	border-style: solid;
-	border-width: 0.4em 0.4em 0 0;
-	content: '';
-	display: inline-block;
-	height: 2.6em;
-	left: 90%;
-	position: relative;
-	top: 0.15em;
-	transform: rotate(-45deg);
-	vertical-align: top;
-	width: 2.6em;
-}
-
   * {
     box-sizing: border-box;
   }
@@ -56,10 +42,6 @@
 		margin-bottom: 3%;
   }
 
-	.BPMintro {
-		padding-left: 5%;
-		padding-right: 5%;
-	}
 
 	.project {
 		padding-bottom: 25px;
@@ -79,6 +61,80 @@
     line-height: 1.3;
     text-align: center;
   }
+
+
+	/* flip card */
+
+	.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+}
+
+
+	.flip-card h1 {
+		font-size: 2.5rem;
+		padding-top: 50px;
+	}
+
+
+.ThreeColumn i {
+	font-size: 50px;
+	padding-top: 50px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #c7c7c7;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #324960;
+  transform: rotateY(180deg);
+}
+
+	.flip-card-back h2 {
+		color: #c7c7c7;
+		font-size: 2.5rem;
+		line-height: 3.3rem;
+		padding-top: 35px;
+	}
+
+	.deliverable h2 {
+		font-size: 2.2rem;
+		padding-top: 20px;
+	}
+
+
 
   .mobileImage img {
     width: 100%;
@@ -120,38 +176,60 @@
 		padding-top: 25px;
   }
 
-  .greenbackground {
-    background-color: #9BBCB1;
-    font-family: 'Bodoni MT', 'Didot';
-    font-size: 1.8rem;
-    line-height: 30px;
-    padding: 4% 8% 4% 8%;
-  }
+	.personaCard {
+		margin-right: 8%;
+		margin-left: 8%;
+		margin-top: 25px;
+	}
 
-  .three-col img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
+	.topPersona {
+		display: flex;
+		background-color: #324960;
+		border-left: 1px solid #324960;
+		border-right: 1px solid #324960;
+		border-top: 1px solid #324960;
+		border-radius: 10px 10px 0 0;
+	}
+
+  .persona-col img{
+		flex: 50%;
+		padding: 5%;
+    width: 50%;
   }
 
   .personaInfo {
-    text-align: center;
+		flex: 50%;
     font-family: 'Bodoni MT', 'Didot';
-    font-size: 1.8rem;
+		color: white;
+    font-size: 2rem;
     line-height: 2.5rem;
-    padding-top: 2.5%;
+    padding-top: 10px;
   }
 
 	.personaGoals{
+		background-color: #c7c7c7;
 		font-family: 'Bodoni MT', 'Didot';
 		font-size: 1.8rem;
 		line-height: 3rem;
-		padding: 5% 10% 5% 10%;
 		line-height: 30px;
+		border-left: 1px solid #b5b2bc;
+		border-right: 1px solid #b5b2bc;
+		border-bottom: 1px solid #b5b2bc;
+		border-radius: 0 0 10px 10px;
+	}
+
+	.personaGoals h2 {
+		color: #324960;
+		padding-left: 6%;
+		padding-top: 25px;
+		text-align: left;
 	}
 
 /* table */
+
+	.table {
+		border: collapse;
+	}
 
 	.table-wrapper{
 	    margin: 10px 70px 70px;
@@ -203,8 +281,20 @@
 
 
 
-
-
+	.chevron::before {
+		border-style: solid;
+		border-width: 0.4em 0.4em 0 0;
+		content: '';
+		display: inline-block;
+		height: 2em;
+		left: 90%;
+		position: relative;
+		top: 0.15em;
+		transform: rotate(-45deg);
+		vertical-align: top;
+		width: 2em;
+		margin-bottom: 20px;
+	}
 
 
 
@@ -235,10 +325,11 @@
     padding: 5% 10% 5% 10%;
   }
 
-  .greenbackground {
-    font-size: 1.8rem;
-    padding: 5% 10% 5% 10%;
-  }
+	.personaInfo {
+		margin-top: 10px;
+		margin-bottom: 20px;
+		padding-top: 18px;
+	}
 
   .teal {
     background-color: #9BBCB1
@@ -248,7 +339,32 @@
     display: block;
     width: 100%;
   }
+
+
+	/* .table {
+		width: 100%;
+		display: flex;
+	}
+
+	.table-wrapper {
+		display: flex;
+
+		margin: 0;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.fl-table {
+		table-layout: fixed;
+	} */
+
+
 }
+
+
+
+
+
 
 
 
@@ -261,10 +377,6 @@
     line-height: 34px;
   }
 
-  .greenbackground {
-      padding: 4% 8% 4% 8%;
-      line-height: 34px;
-    }
 
   .paragraph {
     font-size: 2.2rem;
@@ -295,6 +407,11 @@
     .desktopImage img {
       display: none;
     }
+
+		.personaInfo {
+			padding-top: 30px;
+		}
+
 
 }
 
@@ -335,25 +452,39 @@
       line-height: 38px;
     }
 
+		.flip-card {
+			width: 55%;
+		}
+
+		.flip-card h1 {
+			font-size: 3.2rem;
+		}
+
+		.SWOT {
+			font-size: 2.2rem;
+			padding: 2rem 10% 2rem 10%;
+			line-height: 38px;
+			}
+
     .pageTitle {
       padding-top: 90px;
     }
 
+		.Personas {
+			padding-bottom: 60px;
+		}
+
     .personaInfo {
       font-size: 2.2rem;
       line-height: 33px;
+			padding-top: 45px;
     }
 
-    .greenbackground {
-      font-size: 2.2rem;
-      line-height: 33px;
-      padding: 2.5rem 10% 2.5rem 10%;
-    }
-
-    .three-col img {
-      height: 130px;
-      width: 130px;
-    }
+		.persona-col img{
+			flex: 30%;
+			padding: 5%;
+			width: 40%;
+		}
 
     /* Desktop and mobile images */
       .bothImage img {
@@ -378,32 +509,20 @@
           padding-bottom: 20px;
         }
 
-			/* charts */
-
-			.charts {
-				max-width: 70%;
-				display: flex;
+			.horizontalBar {
+				padding-top: 25px;
+				padding-bottom: 50px;
 			}
 
 			.doughnutChart {
-
+				padding-bottom: 50px;
 			}
 
-		/* .charts {
-			display: flex;
-		}
-
-		.doughnutChart {
-			flex: 50%;
-			padding-left: 5%;
-			padding-right: 5%;
-		}
-
-		.horizontalBar {
-			flex: 50%;
-			padding-left: 5%;
-			padding-right: 5%;
-		} */
+			.chevron::before {
+				height: 2.5rem;
+				width: 2.5rem;
+				left: 93%;
+			}
 
 }
 
@@ -424,6 +543,7 @@
       font-size: 3.6rem;
       padding-top: 15px;
       padding-bottom: 10px;
+			padding-left: 0;
     }
 
     p {
@@ -432,6 +552,12 @@
       line-height: 43px;
     }
 
+		.SWOT {
+			font-size: 2.5rem;
+      padding: 30px 10% 30px 10%;
+      line-height: 43px;
+			}
+
     .pageTitle {
       padding-top: 90px;
     }
@@ -439,12 +565,7 @@
     .personaInfo {
       font-size: 2rem;
       line-height: 40px;
-    }
-
-    .greenbackground {
-      font-size: 2.5rem;
-      line-height: 33px;
-      padding: 2rem 10% 2rem 10%;
+			padding-top: 2px;
     }
 
     .projectLogo {
@@ -452,28 +573,21 @@
       width: 40rem;
     }
 
-    .TwoColumn {
-      display: flex;
-      padding-left: 12%;
-      padding-right: 12%;
-    }
+	  .ThreeColumn {
+	    display: flex;
+	    padding-top: 25px;
+	    padding-bottom: 50px;
+	    padding-left: 5%;
+	    padding-right: 5%;
+	  }
 
+	  .three-col {
+	    flex: 33.333%;
+	  }
 
-  .ThreeColumn {
-    display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-
-  .three-col {
-    flex: 33.333%;
-  }
-
-  .paragraphThree{
-    padding-left: 7%;
-  }
+		.flip-card {
+			width: 90%;
+		}
 
 /* hide mobile for desktop */
   .mobileImage img {
@@ -503,20 +617,23 @@
         padding-bottom: 30px;
       }
 
-  .greenbackground {
-    font-size: 2.7rem;
-    line-height: 37px;
-    padding: 30px 10% 30px 10%;
-  }
-
   .Personas {
     display: flex;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
-  .three-col img {
-    height: 150px;
+	.personaCard {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+
+	.persona-col {
+		flex: 33.333%;
+	}
+
+  .persona-col img {
+    height: 175px;
     width: 150px;
   }
 
@@ -527,6 +644,27 @@
     padding-bottom: 3rem;
   }
 
+
+	.charts {
+		width: 90%;
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#myDoughnutChart {
+		height: 450px !important;
+		width: 450px !important;
+	}
+
+	#bar-chart-horizontal {
+		height: 450px !important;
+		width: 625px !important;
+	}
+
+	.doughnutChart {
+		padding-top: 0px;
+	}
 
 /* desktop ends here  */
 

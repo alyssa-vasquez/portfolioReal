@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
   </head>
@@ -28,14 +29,14 @@
       </header>
 
         <div class="intro">
-          <div class="textBox animated fadeIn"><h3>Hello, everyone!<br />My name is Alyssa Vasquez.<br />I am a UX Designer based in San Diego.<br />I create clear solutions through thoughtful design.</h3></div>
+          <div class="textBox"><h3>Hello, everyone!<br />My name is Alyssa Vasquez.<br />I am a UX Designer based in San Diego.<br />I create clear solutions through thoughtful design.</h3></div>
       </div>
         <div id="scroll">
-          <div class="recent"><h2> Recent Projects</h2></div>
+          <div class="recent" data-aos="fade-right" data-aos-duration="2000"><h2> Recent Projects</h2></div>
           <div class="project">
             <div class="productShot"><img class="productShotImg" src="assets/productShots.png" alt="project product shots"></div>
             <div class="BPMintro"><p>BPM Fitness makes it easy for personal trainers and their clients to connect and share content.</p></div>
-            <div class="purpleButton"><button class="btn" type="button"><a class="link" href="project.html">View Case Study</a></button></div>
+            <div class="purpleButton"><button class="btn" type="button"><a class="link" href="BPMfitness.html">View Case Study</a></button></div>
           </div>
         </div>
 
@@ -64,6 +65,11 @@
       gtag('js', new Date());
 
       gtag('config', 'UA-146156668-1');
+    </script>
+    <!-- scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
 
   </body>
