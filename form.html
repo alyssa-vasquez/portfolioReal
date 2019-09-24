@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Project</title>
+    <title>Form</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -28,17 +29,22 @@
         </ul>
       </header>
 
-      <div class="intro">
-          <div class="textBox"><h3>Hello, everyone!<br />My name is Alyssa Vasquez.<br />I am a UX Designer based in San Diego.<br />I create clear solutions through thoughtful design.</h3></div>
+
+      <div class="container">
+        <h1>Contact Me<h1>
+          <form action="https://formspree.io/email@domain.tld" method="POST">
+            <label for="first_name">Name</label>
+              <input type="text" name="name">
+            <label for="email">Email</label>
+              <input type="email" name="_replyto">
+            <label for="message">Message</label>
+              <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+            <div class="sendBtn">
+              <input type="submit" value="Send">
+            </div>
+          </form>
       </div>
-        <div id="scroll">
-          <div class="recent" data-aos="fade-right" data-aos-duration="2000"><h2> Recent Projects</h2></div>
-          <div class="project">
-            <div class="productShot"><img class="productShotImg" src="assets/productShots.png" alt="project product shots"></div>
-            <div class="BPMintro"><p>BPM Fitness makes it easy for personal trainers and their clients to connect and share content.</p></div>
-            <div class="purpleButton"><button class="btn" type="button"><a class="link" href="BPMfitness.html">View Case Study</a></button></div>
-          </div>
-        </div>
+
 
       <footer>
         <div class="getInTouch"><h6>Get in Touch</h6></div>
@@ -54,23 +60,5 @@
 
 
 
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-146156668-1"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/other.js"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-146156668-1');
-    </script>
-    <!-- scroll -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-
-  </body>
+    </body>
 </html>

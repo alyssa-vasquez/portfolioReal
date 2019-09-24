@@ -1,4 +1,3 @@
-
-$('button').click(function() {
-    $('section').addClass('animated fadeInLeft');
-});
+function flip() {
+    $('.card').toggleClass('flipped');
+}

@@ -1,5 +1,9 @@
-  * {
+* {
     box-sizing: border-box;
+  }
+
+  .container {
+    overflow: hidden;
   }
 
 /* purple */
@@ -52,82 +56,87 @@
   padding-top: 15px;
   }
 
-  .TwoColumn {
-    display: flex;
-  }
-
-  .two-col {
-    flex: 50%;
-    line-height: 1.3;
-    text-align: center;
-  }
-
 
 	/* flip card */
 
-	.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
-	border-radius: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 25px;
-}
-
-
-	.flip-card h1 {
+	.card .front h1 {
 		font-size: 2.5rem;
 		padding-top: 50px;
 	}
 
+  .ThreeColumn i {
+  	font-size: 50px;
+  	padding-top: 50px;
+  }
 
-.ThreeColumn i {
-	font-size: 50px;
-	padding-top: 50px;
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: #c7c7c7;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: #324960;
-  transform: rotateY(180deg);
-}
-
-	.flip-card-back h2 {
+	.card .back h2 {
 		color: #c7c7c7;
 		font-size: 2.5rem;
 		line-height: 3.3rem;
 		padding-top: 35px;
 	}
+
+  .cardHolder {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+  }
+
+  .card {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transition: -webkit-transform 1s;
+      -moz-transition: -moz-transform 1s;
+      -o-transition: -o-transform 1s;
+      transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -o-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      -webkit-transform-origin: 50% 50%;
+  }
+
+  .card div {
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      backface-visibility: hidden;
+  }
+
+  .card .front {
+    background: #c7c7c7;
+  }
+
+  .card .back {
+    background-color: #324960;
+      -webkit-transform: rotateY( 180deg );
+      -moz-transform: rotateY( 180deg );
+      -o-transform: rotateY( 180deg );
+      transform: rotateY( 180deg );
+  }
+
+  .card.flipped {
+      -webkit-transform: rotateY( 180deg );
+      -moz-transform: rotateY( 180deg );
+      -o-transform: rotateY( 180deg );
+      transform: rotateY( 180deg );
+  }
+
 
 	.deliverable h2 {
 		font-size: 2.2rem;
@@ -548,13 +557,13 @@
 
     p {
       font-size: 2.5rem;
-      padding: 30px 10% 30px 10%;
+      padding: 30px 15% 30px 15%;
       line-height: 43px;
     }
 
 		.SWOT {
 			font-size: 2.5rem;
-      padding: 30px 10% 30px 10%;
+      padding: 30px 15% 30px 15%;
       line-height: 43px;
 			}
 
@@ -652,19 +661,26 @@
 		margin-right: auto;
 	}
 
+  .horizontalBar {
+    padding-left: 5px;
+  }
+
+  .doughnutChart {
+    padding-top: 25px;
+    padding-right: 5px;
+  }
+
 	#myDoughnutChart {
-		height: 450px !important;
-		width: 450px !important;
+		height: 400px !important;
+		width: 400px !important;
 	}
 
-	#bar-chart-horizontal {
-		height: 450px !important;
-		width: 625px !important;
+  	#bar-chart-horizontal {
+		height: 400px !important;
+		width: 600px !important;
 	}
 
-	.doughnutChart {
-		padding-top: 0px;
-	}
+
 
 /* desktop ends here  */
 

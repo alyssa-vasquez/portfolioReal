@@ -61,7 +61,7 @@
     padding-bottom: 30px;
   }
 
-  .project{
+  /* .project{
     background-color: #ffffff;
     width: 75%;
     margin-left: 12.5%;
@@ -80,7 +80,7 @@
 
   .BPMintro {
   padding: 2.5rem 10% 2.5rem 10%;
-  }
+  } */
 
   /* button */
 
@@ -106,8 +106,6 @@
   font-family: "Source Sans Pro";
   text-decoration: none;
   }
-
-
 
   footer {
   background-color: #A194C0;
@@ -161,28 +159,10 @@
   }
 
 
-
-/* animation for bio */
-
   .textBox {
-      /* position: absolute; */
-      /* left: -1000px;
-      width: 100%;
-      -webkit-animation: slide 0.5s forwards;
-      -webkit-animation-delay: 2s;
-      animation: slide 1s forwards;
-      animation-delay: .2s; */
       padding-top: 50px;
       padding-bottom: 10px;
   }
-
-  /* @-webkit-keyframes slide {
-      100% { left: 0; }
-  }
-
-  @keyframes slide {
-      100% { left: 0; }
-  } */
 
 
   body {
@@ -315,24 +295,27 @@
   }
 
 
+
+
+
+@media (min-width: 1px) and (max-width: 544px) {
+
+  .project{
+    background-color: #ffffff;
+    width: 100%;
+    /* margin-left: 2.5%; */
+    margin-bottom: 50px;
   }
 
+  .productShot img {
+    width: 100%;
+  }
 
+  .BPMintro {
+  padding: 2.5rem 10% 2.5rem 10%;
+  }
 
-
-
-
-
-
-
-/* Mobile media query */
-/* @media (min-width: 80px) and (max-width: 544px) {
-
-
-} */
-
-
-
+}
 
 
 
@@ -355,13 +338,33 @@
   font-family: 'Bodoni MT', 'Didot';
   font-size: 2.5rem;
   padding-left: 8%;
-  line-height: 3rem;
+  line-height: 3.5rem;
   }
 
   .header li a {
     font-size: 2rem;
   }
 
+  .project{
+    background-color: #ffffff;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-bottom: 70px;
+  }
+
+  .productShotImg {
+    display: block;
+    margin-left: 12%;
+    margin-right: 18%;
+  }
+
+  .productShot img {
+    width: 70%;
+  }
+
+  .BPMintro {
+  padding: 2.5rem 10% 2.5rem 10%;
+  }
 
 }
 
@@ -369,20 +372,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* tablet start */
 
-@media (min-width: 768px) {
+@media (min-width: 768px){
 
 
   /* navbar start */
@@ -453,19 +445,31 @@
   .link {
   font-size: 2rem;
   }
+
+
+
+  .project{
+    background-color: #ffffff;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-bottom: 70px;
+  }
+
+  .productShotImg {
+    display: block;
+    margin-left: 12%;
+    margin-right: 18%;
+  }
+
+  .productShot img {
+    width: 70%;
+  }
+
+  .BPMintro {
+  padding: 2.5rem 10% 2.5rem 10%;
+  }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -559,6 +563,27 @@
   .contact {
     height: 4rem;
     width: 4rem;
+  }
+
+  .project{
+    background-color: #ffffff;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-bottom: 70px;
+  }
+
+  .productShotImg {
+    display: block;
+    margin-left: 12%;
+    margin-right: 18%;
+  }
+
+  .productShot img {
+    width: 70%;
+  }
+
+  .BPMintro {
+  padding: 2.5rem 10% 2.5rem 10%;
   }
 
 
