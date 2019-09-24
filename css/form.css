@@ -2,3 +2,103 @@
 * {
   box-sizing: border-box;
 }
+
+
+h1 {
+  padding-top: 95px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+  .contactForm {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Remove outline of all elements on focus */
+  *:focus {
+  	outline: 0;
+  }
+
+  /* Add styles to 'label' selector */
+  label {
+    font-family: 'Bodoni MT', 'Didot';
+    font-size: 1.5rem;
+  	margin-left: 12px;
+  }
+
+  /* Add styles to 'input' and 'textarea' selectors */
+  input[type=text],input[type=email], textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+  }
+
+  /* Add styles to show 'focus' of selector */
+  input[type=text]:focus,input[type=email]:focus, textarea:focus {
+  	border: 1px solid #9BBCB1;
+  }
+
+  /* Add styles to the submit button */
+  input[type=submit] {
+  	background: #64B5F6;
+  	margin: 0 auto;
+  	outline: 0;
+  	color: white;
+  	border: 0;
+  	padding: 12px 24px;
+  	border-radius: 4px;
+  	transition: all ease-in-out 0.1s;
+  	position: relative;
+  	display: inline-block;
+  	text-align: center;
+  }
+
+  /* Style 'hover' property */
+  input[type=submit]:hover {
+  	background: #9BBCB1;
+  }
+
+    button {
+      color: white;
+      font-size: 1.6rem;
+      font-family: "Source Sans Pro";
+      text-decoration: none;
+    }
+
+
+
+    /* Landscape media query */
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 4rem;
+      }
+
+      button {
+      font-size: 2rem;
+      }
+    }
+
+    /* Desktop starts here */
+
+    @media screen and (min-width: 1025px) {
+      h1 {
+        padding-top: 125px;
+      }
+
+      button {
+      font-size: 2.4rem;
+      }
+
+      .contactForm {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }

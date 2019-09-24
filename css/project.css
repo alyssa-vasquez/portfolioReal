@@ -71,9 +71,9 @@
 
 	.card .back h2 {
 		color: #c7c7c7;
-		font-size: 2.5rem;
-		line-height: 3.3rem;
-		padding-top: 35px;
+		font-size: 2.8rem;
+		line-height: 3.7rem;
+		padding-top: 25px;
 	}
 
   .cardHolder {
@@ -130,19 +130,18 @@
       transform: rotateY( 180deg );
   }
 
-  .card.flipped {
+  .card.flipped, .card:hover {
       -webkit-transform: rotateY( 180deg );
       -moz-transform: rotateY( 180deg );
       -o-transform: rotateY( 180deg );
       transform: rotateY( 180deg );
   }
 
-
-	.deliverable h2 {
-		font-size: 2.2rem;
-		padding-top: 20px;
-	}
-
+  .back .deliverable h2 {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    padding-top: 20px;
+  }
 
 
   .mobileImage img {
@@ -158,8 +157,6 @@
   .bothImage img {
     width: 100%;
   }
-
-
 
 /* hide desktop image for comp */
   .desktopImage img {
@@ -349,23 +346,9 @@
     width: 100%;
   }
 
-
-	/* .table {
-		width: 100%;
-		display: flex;
-	}
-
-	.table-wrapper {
-		display: flex;
-
-		margin: 0;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	.fl-table {
-		table-layout: fixed;
-	} */
+  .ThreeColumn {
+    padding-bottom: 25px;
+  }
 
 
 }
@@ -421,6 +404,10 @@
 			padding-top: 30px;
 		}
 
+    .cardHolder {
+      width: 450px;
+    }
+
 
 }
 
@@ -460,14 +447,6 @@
       padding: 2rem 10% 2rem 10%;
       line-height: 38px;
     }
-
-		.flip-card {
-			width: 55%;
-		}
-
-		.flip-card h1 {
-			font-size: 3.2rem;
-		}
 
 		.SWOT {
 			font-size: 2.2rem;
@@ -533,6 +512,15 @@
 				left: 93%;
 			}
 
+      .cardHolder {
+        width: 450px;
+      }
+
+      .card .front h1 {
+        font-size: 3rem;
+        padding-top: 40px;
+      }
+
 }
 
 
@@ -590,13 +578,18 @@
 	    padding-right: 5%;
 	  }
 
+
 	  .three-col {
 	    flex: 33.333%;
 	  }
 
-		.flip-card {
-			width: 90%;
-		}
+    .cardHolder {
+      width: 300px;
+    }
+
+    .card .front h1 {
+  		font-size: 3.2rem;
+  	}
 
 /* hide mobile for desktop */
   .mobileImage img {
